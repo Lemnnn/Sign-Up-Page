@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: start;
+}
+
+.imageContainer {
+  height: 100vh;
+  width: 30vw;
+  background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1862&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainter {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 150px;
+}
+
+.logoText {
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.creditsText {
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.signUpContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.space {
+  padding-left: 40px;
+}
+
+.formText {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.youKnow {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  gap: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: start;
+  gap: 100px;
+}
+
+.inputCol {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.button {
+  margin: 30px 0px;
+  margin-left: 40px;
+  padding: 10px 40px;
+  background-color: #596d48;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  align-self: baseline;
+}
+
+input {
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+  border: 2px solid #e5e7eb;
+}
+
+.inputText {
+  font-weight: 900;
+}
