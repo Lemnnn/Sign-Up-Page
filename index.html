@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    
     <title>Sign-up Page</title>
   </head>
   <body>
@@ -27,40 +28,46 @@
           <p>You know you want to.</p>
         </div>
         <div class="formContainer">
-          <h2>Let&apos;s do this!</h2>
-          <div class="inputContainer">
+          <form>
+           <h2>Let&apos;s do this!</h2>
+           <div class="inputContainer">
             <div class="inputCol">
-              <div>
-                <p class="inputText">First Name</p>
+              <div class="inputGroup">
+                <label class="inputText">First Name</label>
                 <input type="text" />
               </div>
-              <div>
-                <p class="inputText">Email</p>
+              <div class="inputGroup">
+                <label class="inputText">Email</label>
                 <input type="email" />
               </div>
-              <div>
-                <p class="inputText">Password</p>
-                <input type="password" />
+              <div class="inputGroup">
+                <label class="inputText" for="password">Password</label>
+                <input type="password" id="password"/>
+                <div class="error"></div>
               </div>
             </div>
             <div class="inputCol">
-              <div>
-                <p class="inputText">Last Name</p>
+              <div class="inputGroup">
+                <label class="inputText">Last Name</label>
                 <input type="text" />
               </div>
-              <div>
-                <p class="inputText">Phone Number</p>
+              <div class="inputGroup">
+                <label class="inputText">Phone Number</label>
                 <input type="tel" />
               </div>
-              <div>
-                <p class="inputText">Confirm Password</p>
-                <input type="password" />
+              <div class="inputGroup">
+                <label class="inputText" for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" />
+                <div class="error"></div>
               </div>
             </div>
           </div>
-        </div>
-        <button class="button">Create Account</button>
+         </div>
+         <button class="button" onClick="checkPassword()">Create Account</button>
+        </form>
         <p class="logInLink">Already have an account? Log in</p>
+
+        <script src="main.js"></script>
       </div>
     </div>
   </body>
