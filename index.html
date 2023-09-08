@@ -28,7 +28,7 @@
           <p>You know you want to.</p>
         </div>
         <div class="formContainer">
-          <form>
+          <form onsubmit="submitForm()">
            <h2>Let&apos;s do this!</h2>
            <div class="inputContainer">
             <div class="inputCol">
@@ -43,7 +43,7 @@
               <div class="inputGroup">
                 <label class="inputText" for="password">Password</label>
                 <input type="password" id="password"/>
-                <div class="error"></div>
+                <div class="error" id="error"></div>
               </div>
             </div>
             <div class="inputCol">
@@ -58,12 +58,12 @@
               <div class="inputGroup">
                 <label class="inputText" for="confirmPassword">Confirm Password</label>
                 <input type="password" id="confirmPassword" />
-                <div class="error"></div>
+                <div class="error" id="error"></div>
               </div>
             </div>
           </div>
          </div>
-         <button class="button" onClick="checkPassword()">Create Account</button>
+         <button class="button" type="submit" onClick="checkPassword()">Create Account</button>
         </form>
         <p class="logInLink">Already have an account? Log in</p>
 
